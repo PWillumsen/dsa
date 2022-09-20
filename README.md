@@ -19,4 +19,6 @@ npm test
 - [Insertion sort](src/code/insertionSort.ts)
 - [Selection sort](src/code/selectionSort.ts)
 
+### Linked list
 
+- [Singly linked list/Queue](src/code/queue.ts)
