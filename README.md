@@ -8,13 +8,13 @@ npm test
 
 ### Search
 
-- Binary search
+- [Binary search](src/code/binarySearch.ts)
 
 
 ### Sort
 
-- Bubble sort
-- Insertion sort
-- Selection sort
+- [Bubble sort](src/code/bubbleSort.ts)
+- [Insertion sort](src/code/insertionSort.ts)
+- [Selection sort](src/code/selectionSort.ts)
 
 
