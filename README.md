@@ -21,4 +21,5 @@ npm test
 
 ### Linked list
 
-- [Singly linked list/Queue](src/code/queue.ts)
+- [Queue](src/code/queue.ts)
+- [Stack](src/code/stack.ts)
