@@ -1,12 +1,12 @@
-type QNode<T> = {
+type Node<T> = {
   value: T;
-  next?: QNode<T>;
+  next?: Node<T>;
 };
 
 export default class Queue<T> {
   public length: number;
-  private head?: QNode<T>;
-  private tail?: QNode<T>;
+  private head?: Node<T>;
+  private tail?: Node<T>;
 
   constructor() {
     this.tail = this.head = undefined;
@@ -14,7 +14,7 @@ export default class Queue<T> {
   }
 
   enqueue(item: T): void {
-    const node = { value: item } as QNode<T>;
+    const node = { value: item } as Node<T>;
     this.length++;
     if (!this.head) {
       this.head = this.tail = node;
