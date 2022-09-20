@@ -1,5 +1,5 @@
 import {test, expect} from "@jest/globals";
-import Stack from "@code/Stack";
+import Stack from "@code/stack";
 
 test("stack", function () {
     const list = new Stack<number>();
