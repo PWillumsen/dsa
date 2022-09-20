@@ -1,12 +1,12 @@
 export default class SinglyLinkedList<T> {
-  public length: number;
+    public length: number;
 
-  constructor() {}
+    constructor() {}
 
-  get(idx: number): T | undefined {}
-  prepend(item: T): void {}
-  append(item: T): void {}
-  insertAt(item: T, idx: number): void {}
-  remove(item: T): T | undefined {}
-  removeAt(idx: number): T | undefined {}
+    get(idx: number): T | undefined {}
+    prepend(item: T): void {}
+    append(item: T): void {}
+    insertAt(item: T, idx: number): void {}
+    remove(item: T): T | undefined {}
+    removeAt(idx: number): T | undefined {}
 }
