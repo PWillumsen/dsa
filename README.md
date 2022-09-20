@@ -1,5 +1,7 @@
 # DSA
 
+![test badge](https://github.com/PeterWillumsen/dba/actions/workflows/node.js.yml/badge.svg)
+
 ```
 npm i
 npm test
