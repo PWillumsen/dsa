@@ -1,6 +1,6 @@
 # DSA
 
-![test badge](https://github.com/PeterWillumsen/dba/actions/workflows/node.js.yml/badge.svg)
+[![Build](https://github.com/PeterWillumsen/dsa/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/PeterWillumsen/dsa/actions/workflows/node.js.yml)
 
 ```
 npm i
