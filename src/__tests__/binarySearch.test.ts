@@ -6,6 +6,6 @@ describe('Binary search', () => {
     expect(binarySearch([0,2,4], 5)).toBe(-1);
   });
   test('Value is in array', () => {
-    expect(binarySearch([0,2,4], 4)).toBe(4);
+    expect(binarySearch([0,2,4], 4)).toBe(2);
   });
 });
