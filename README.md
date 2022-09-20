@@ -1,4 +1,4 @@
-# algos-ts
+# algos
 
 ```
 npm i
