@@ -1,4 +1,4 @@
-# algos
+# DSA
 
 ```
 npm i
