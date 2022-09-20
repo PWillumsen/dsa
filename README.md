@@ -23,3 +23,8 @@ npm test
 
 - [Queue](src/code/queue.ts)
 - [Stack](src/code/stack.ts)
+
+
+### Misc
+
+- [ArrayList](src/code/arrayList.ts)
