@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage --collectCoverageFrom=./src/code/*"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
