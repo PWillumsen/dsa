@@ -1,7 +1,7 @@
 import {describe, expect, test} from '@jest/globals';
 import insertionSort from '@code/insertionSort';
 
-describe('insertionsort', () => {
+describe('insertionSort', () => {
   test('Allready sorted', () => {
     let arr = [0,2,4];
     insertionSort(arr);
