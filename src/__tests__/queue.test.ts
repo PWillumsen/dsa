@@ -4,6 +4,11 @@ import Queue from "@code/queue";
 test("queue", function () {
   const list = new Queue<number>();
 
+  expect(list.length).toBe(0);
+  expect(list.peek()).toEqual(undefined);
+  expect(list.deque()).toEqual(undefined);
+
+
   list.enqueue(5);
   list.enqueue(7);
   list.enqueue(9);
