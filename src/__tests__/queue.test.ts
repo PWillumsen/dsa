@@ -8,7 +8,6 @@ test("queue", function () {
   expect(list.peek()).toEqual(undefined);
   expect(list.deque()).toEqual(undefined);
 
-
   list.enqueue(5);
   list.enqueue(7);
   list.enqueue(9);

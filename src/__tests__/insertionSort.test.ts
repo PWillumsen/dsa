@@ -1,15 +1,15 @@
-import {describe, expect, test} from '@jest/globals';
-import insertionSort from '@code/insertionSort';
+import { describe, expect, test } from "@jest/globals";
+import insertionSort from "@code/insertionSort";
 
-describe('insertionSort', () => {
-  test('Allready sorted', () => {
-    let arr = [0,2,4];
+describe("Insertion Sort", () => {
+  test("Allready sorted", () => {
+    let arr = [0, 2, 4];
     insertionSort(arr);
-    expect(arr).toEqual([0,2,4]);
+    expect(arr).toEqual([0, 2, 4]);
   });
-  test('Sorts correctly', () => {
-    let arr = [10,-1,1111,0,13];
+  test("Sorts correctly", () => {
+    let arr = [10, -1, 1111, 0, 13];
     insertionSort(arr);
-    expect(arr).toEqual([-1,0,10,13,1111]);
+    expect(arr).toEqual([-1, 0, 10, 13, 1111]);
   });
 });

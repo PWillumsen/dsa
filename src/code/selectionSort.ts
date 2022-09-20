@@ -1,4 +1,4 @@
-export default function selectionSort<T>(arr: T[]): void{
+export default function selectionSort<T>(arr: T[]): void {
   for (let i = 0; i < arr.length; i++) {
     let min = i;
     for (let j = i; j < arr.length; j++) {
