@@ -27,4 +27,14 @@ test("array-list", function () {
   expect(list.removeValue(9)).toEqual(9);
   expect(list.length).toEqual(2);
   expect(list.get(0)).toEqual(7);
+
+  list.append(5);
+  list.append(6);
+  list.append(7);
+  list.append(8);
+  list.append(9);
+  list.append(10);
+  expect(list.length).toEqual(8);
+
+  expect(list.get(100)).toEqual(undefined);
 });

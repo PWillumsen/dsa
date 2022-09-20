@@ -49,7 +49,7 @@ export default class ArrayList<T> {
 
   removeAt(idx: number): T | undefined {
     if (idx > this.length) {
-      throw new Error("index out of range");
+      throw new Error("idx out of range");
     }
 
     const value = this.arr[idx];
