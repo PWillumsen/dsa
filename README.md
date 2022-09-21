@@ -25,6 +25,7 @@ npm test
 - [Queue](src/code/queue.ts)
 - [Stack](src/code/stack.ts)
 - [ArrayList](src/code/arrayList.ts)
+- [DoublyLinkedList](src/code/doublyLinkedList.ts)
 
 ### Recursion
 - [Maze solver](src/code/mazeSolver.ts)
