@@ -28,4 +28,13 @@ npm test
 - [DoublyLinkedList](src/code/doublyLinkedList.ts)
 
 ### Recursion
+
 - [Maze solver](src/code/mazeSolver.ts)
+
+
+### Trees
+
+- Traverse binary tree
+  - [Pre order](src/code/binaryTreePreOrder.ts)
+  - [In order](src/code/binaryTreeInOrder.ts)
+  - [Post order](src/code/binaryTreePostOrder.ts)
