@@ -1,4 +1,4 @@
-import {test, expect } from "@jest/globals";
+import { test, expect } from "@jest/globals";
 import quickSort from "@code/quickSort";
 
 test("Quick sort", function () {
@@ -7,4 +7,3 @@ test("Quick sort", function () {
     quickSort(arr);
     expect(arr).toEqual([-1, 3, 4, 7, 9, 42, 69, 420]);
 });
-

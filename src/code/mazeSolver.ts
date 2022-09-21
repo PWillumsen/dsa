@@ -13,7 +13,6 @@ function walk(
     seen: boolean[][],
     path: Point[],
 ): boolean {
-
     // Current position not on map
     if (curr.x < 0 || curr.x >= maze[0].length || curr.y < 0 || curr.y >= maze.length) {
         return false;
