@@ -18,6 +18,7 @@ npm test
 - [Bubble sort](src/code/bubbleSort.ts)
 - [Insertion sort](src/code/insertionSort.ts)
 - [Selection sort](src/code/selectionSort.ts)
+- [Quick sort](src/code/quickSort.ts)
 
 ### Lists
 
