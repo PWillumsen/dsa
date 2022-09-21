@@ -38,3 +38,4 @@ npm test
   - [Pre order](src/code/binaryTreePreOrder.ts)
   - [In order](src/code/binaryTreeInOrder.ts)
   - [Post order](src/code/binaryTreePostOrder.ts)
+- [Binary tree BFS](src/code/binaryTreeBFS.ts)
