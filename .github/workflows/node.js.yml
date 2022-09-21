@@ -32,6 +32,8 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm test
+    - run: npm run prettier
+    - run: npm run lint
     
     - name: Tests ✅
       if: ${{ success() }}
