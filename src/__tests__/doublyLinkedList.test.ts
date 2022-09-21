@@ -1,6 +1,5 @@
-import {test, expect} from "@jest/globals";
+import { test, expect } from "@jest/globals";
 import DoublyLinkedList from "@code/doublyLinkedList";
-
 
 test("DoublyLinkedList", function () {
     const list = new DoublyLinkedList<number>();
@@ -37,6 +36,12 @@ test("DoublyLinkedList", function () {
     list.append(10);
     expect(list.length).toEqual(8);
 
+    list.insertAt(19, 1);
+    expect(list.get(1)).toEqual(19);
+    list.insertAt(14, 0);
+    expect(list.get(0)).toEqual(14);
+
+    expect(list.removeAt(100)).toEqual(undefined);
+
     expect(list.get(100)).toEqual(undefined);
 });
-
