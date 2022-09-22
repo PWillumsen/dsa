@@ -9,7 +9,7 @@ export default class Stack<T> {
 
     push(item: T): void {
         this.length++;
-        const node = { value: item, prev: this.head } as ListNode<T>;
+        const node:ListNode<T> = { value: item, next: this.head };
         this.head = node;
     }
 
