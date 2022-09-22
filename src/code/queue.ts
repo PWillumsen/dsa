@@ -1,15 +1,15 @@
 export default class Queue<T> {
     public length: number;
-    private head?: ListNode<T>;
-    private tail?: ListNode<T>;
+    private head: ListNode<T> | null;
+    private tail: ListNode<T> | null;
 
     constructor() {
-        this.tail = this.head = undefined;
+        this.tail = this.head = null;
         this.length = 0;
     }
 
     enqueue(item: T): void {
-        const node: ListNode<T> = { value: item };
+        const node: ListNode<T> = { value: item, next: null };
         this.length++;
         if (!this.head) {
             this.head = this.tail = node;
@@ -21,20 +21,20 @@ export default class Queue<T> {
         }
     }
 
-    deque(): T | undefined {
+    deque(): T | null {
         if (!this.head) {
-            return undefined;
+            return null;
         }
 
         this.length--;
 
         const head = this.head;
-        this.head = this.head.next;
+        this.head = this.head.next || null;
 
         return head.value;
     }
 
-    peek(): T | undefined {
-        return this.head?.value;
+    peek(): T | null {
+        return this.head?.value || null;
     }
 }

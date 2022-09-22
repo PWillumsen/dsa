@@ -13,7 +13,7 @@ test("array-list", function () {
 
     list.append(11);
     expect(list.removeAt(1)).toEqual(9);
-    expect(list.removeValue(9)).toEqual(undefined);
+    expect(list.removeValue(9)).toEqual(null);
     expect(list.removeAt(0)).toEqual(5);
     expect(list.removeAt(0)).toEqual(11);
     expect(list.length).toEqual(0);
@@ -36,5 +36,5 @@ test("array-list", function () {
     list.append(10);
     expect(list.length).toEqual(8);
 
-    expect(list.get(100)).toEqual(undefined);
+    expect(list.get(100)).toEqual(null);
 });

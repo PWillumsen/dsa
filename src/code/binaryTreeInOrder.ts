@@ -1,4 +1,4 @@
-function walk<T>(node: BinaryNode<T> | undefined, path: T[]): T[] {
+function walk<T>(node: BinaryNode<T> | null, path: T[]): T[] {
     if (!node) {
         return path;
     }
