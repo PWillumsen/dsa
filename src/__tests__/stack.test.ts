@@ -5,10 +5,10 @@ test("stack", function () {
     const list = new Stack<number>();
 
     expect(list.length).toBe(0);
-    expect(list.peek()).toEqual(undefined);
-    expect(list.pop()).toEqual(undefined);
-    expect(list.pop()).toEqual(undefined);
-    expect(list.pop()).toEqual(undefined);
+    expect(list.peek()).toEqual(null);
+    expect(list.pop()).toEqual(null);
+    expect(list.pop()).toEqual(null);
+    expect(list.pop()).toEqual(null);
 
     list.push(5);
     list.push(7);
@@ -22,7 +22,7 @@ test("stack", function () {
     expect(list.pop()).toEqual(7);
     expect(list.peek()).toEqual(5);
     expect(list.pop()).toEqual(5);
-    expect(list.pop()).toEqual(undefined);
+    expect(list.pop()).toEqual(null);
 
     list.push(69);
     expect(list.peek()).toEqual(69);

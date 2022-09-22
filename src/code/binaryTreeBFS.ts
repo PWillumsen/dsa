@@ -1,11 +1,11 @@
 import Queue from "@code/queue";
 
 export default function bfs<T>(head: BinaryNode<T>, needle: T): boolean {
-    const q = new Queue<BinaryNode<T> | undefined>();
+    const q = new Queue<BinaryNode<T> | null>();
     q.enqueue(head);
 
     while (q.length) {
-        const node: BinaryNode<T> | undefined = q.deque();
+        const node: BinaryNode<T> | null = q.deque();
 
         if (!node) {
             continue;

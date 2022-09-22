@@ -5,8 +5,8 @@ test("queue", function () {
     const list = new Queue<number>();
 
     expect(list.length).toBe(0);
-    expect(list.peek()).toEqual(undefined);
-    expect(list.deque()).toEqual(undefined);
+    expect(list.peek()).toEqual(null);
+    expect(list.deque()).toEqual(null);
 
     list.enqueue(5);
     list.enqueue(7);
@@ -20,7 +20,7 @@ test("queue", function () {
     expect(list.deque()).toEqual(9);
     expect(list.peek()).toEqual(11);
     expect(list.deque()).toEqual(11);
-    expect(list.deque()).toEqual(undefined);
+    expect(list.deque()).toEqual(null);
     expect(list.length).toEqual(0);
 
     list.enqueue(69);

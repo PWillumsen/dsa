@@ -33,7 +33,7 @@ export default class ArrayList<T> {
         this.insertAt(item, this.length);
     }
 
-    removeValue(item: T): T | undefined {
+    removeValue(item: T): T | null {
         let idx = -1;
 
         for (let i = 0; i < this.length; i++) {
@@ -42,12 +42,12 @@ export default class ArrayList<T> {
             }
         }
         if (idx === -1) {
-            return undefined;
+            return null;
         }
         return this.removeAt(idx);
     }
 
-    removeAt(idx: number): T | undefined {
+    removeAt(idx: number): T | null {
         if (idx > this.length) {
             throw new Error("idx out of range");
         }
@@ -61,9 +61,9 @@ export default class ArrayList<T> {
         return value;
     }
 
-    get(idx: number): T | undefined {
+    get(idx: number): T | null {
         if (idx > this.length) {
-            return undefined;
+            return null;
         }
         return this.arr[idx];
     }

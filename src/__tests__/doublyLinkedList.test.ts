@@ -13,7 +13,7 @@ test("DoublyLinkedList", function () {
 
     list.append(11);
     expect(list.removeAt(1)).toEqual(9);
-    expect(list.removeValue(9)).toEqual(undefined);
+    expect(list.removeValue(9)).toEqual(null);
     expect(list.removeAt(0)).toEqual(5);
     expect(list.removeAt(0)).toEqual(11);
     expect(list.length).toEqual(0);
@@ -41,7 +41,7 @@ test("DoublyLinkedList", function () {
     list.insertAt(14, 0);
     expect(list.get(0)).toEqual(14);
 
-    expect(list.removeAt(100)).toEqual(undefined);
+    expect(list.removeAt(100)).toEqual(null);
 
-    expect(list.get(100)).toEqual(undefined);
+    expect(list.get(100)).toEqual(null);
 });
