@@ -1,4 +1,4 @@
-export const tree: BinaryNode<number> = {
+export const tree: BinaryTree<number> = {
     value: 20,
     right: {
         value: 50,
@@ -40,7 +40,7 @@ export const tree: BinaryNode<number> = {
     },
 };
 
-export const tree2: BinaryNode<number> = {
+export const tree2: BinaryTree<number> = {
     value: 20,
     right: {
         value: 50,
