@@ -7,16 +7,17 @@ export default class MinHeap<T> {
         this.data = [];
     }
 
-    insert(value: T): void {
+    push(value: T): void {
         this.data.push(value);
         this.bubbleUp(this.length);
         this.length++;
     }
 
-    extract_min(): T | undefined {
+    pop(): T | undefined {
         let min;
 
         if (this.length === 0) {
+            this.data = [];
             return undefined;
         } else {
             this.length--;
@@ -26,11 +27,22 @@ export default class MinHeap<T> {
         }
         return min;
     }
-
-    static makeHeap<T>(l: T[]): MinHeap<T> {
+    
+    peek(): T{
+        return this.data[0];
+    }
+    
+    static from<T>(l: T[]): MinHeap<T> {
         const h = new MinHeap<T>();
-        for (const e of l) {
-            h.insert(e);
+        
+        h.length = l.length;
+        
+        for (let i = 0; i < l.length; i++) {
+            h.data[i] = l[i];
+        }
+        
+        for (let i = h.length; i >= 0; i--) {
+            h.bubbleDown(i);
         }
         return h;
     }
