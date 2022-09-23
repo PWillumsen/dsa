@@ -19,6 +19,7 @@ npm test
 - [Insertion sort](src/code/insertionSort.ts)
 - [Selection sort](src/code/selectionSort.ts)
 - [Quick sort](src/code/quickSort.ts)
+- [Heap sort](src/code/minHeap.ts)
 
 ### Lists
 
@@ -32,6 +33,9 @@ npm test
 - [Maze solver](src/code/mazeSolver.ts)
 
 
+### Heap
+- [Min heap](src/code/minHeap.ts)
+
 ### Trees
 
 - Traverse binary tree
@@ -40,3 +44,4 @@ npm test
   - [Post order](src/code/binaryTreePostOrder.ts)
 - [Binary tree BFS](src/code/binaryTreeBFS.ts)
 - [Compare binary trees](src/code/compareBinaryTrees.ts)
+- [Binary search tree](src/code/binarySearchTree.ts)
