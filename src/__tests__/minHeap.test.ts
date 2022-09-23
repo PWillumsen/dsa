@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import MinHeap from "@code/MinHeap";
+import MinHeap from "@code/minHeap";
 
 test("min heap", function () {
     const heap = new MinHeap();
