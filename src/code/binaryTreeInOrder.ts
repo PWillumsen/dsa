@@ -1,4 +1,4 @@
-function walk<T>(node: BinaryNode<T> | null, path: T[]): T[] {
+function walk<T>(node: BinaryTree<T> | null, path: T[]): T[] {
     if (!node) {
         return path;
     }
@@ -10,6 +10,6 @@ function walk<T>(node: BinaryNode<T> | null, path: T[]): T[] {
     return path;
 }
 
-export default function inOrderSearch<T>(head: BinaryNode<T>): T[] {
+export default function inOrderSearch<T>(head: BinaryTree<T>): T[] {
     return walk(head, []);
 }

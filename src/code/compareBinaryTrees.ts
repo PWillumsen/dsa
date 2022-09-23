@@ -1,6 +1,6 @@
 export default function compareBinaryTrees<T>(
-    a: BinaryNode<T> | null,
-    b: BinaryNode<T> | null,
+    a: BinaryTree<T> | null,
+    b: BinaryTree<T> | null,
 ): boolean {
     if (a === null && b === null) {
         return true;

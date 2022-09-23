@@ -3,8 +3,8 @@ type ListNode<T> = {
     next: ListNode<T> | null;
 };
 
-declare type BinaryNode<T> = {
+type BinaryTree<T> = {
     value: T;
-    left: BinaryNode<T> | null;
-    right: BinaryNode<T> | null;
+    left: BinaryTree<T> | null;
+    right: BinaryTree<T> | null;
 };
