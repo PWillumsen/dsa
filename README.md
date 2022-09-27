@@ -36,7 +36,7 @@ npm test
 ### Heap
 - [Min heap](src/code/minHeap.ts)
 
-### Trees
+### Gaphs
 
 - Traverse binary tree
   - [Pre order](src/code/binaryTreePreOrder.ts)
@@ -45,3 +45,5 @@ npm test
 - [Binary tree BFS](src/code/binaryTreeBFS.ts)
 - [Compare binary trees](src/code/compareBinaryTrees.ts)
 - [Binary search tree](src/code/binarySearchTree.ts)
+- [BFS adjacency matrix](src/code/bfsGraphMatrix.ts)
+- [DFS adjacency list](src/code/dfsGraphList.ts)
