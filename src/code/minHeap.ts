@@ -27,20 +27,20 @@ export default class MinHeap<T> {
         }
         return min;
     }
-    
-    peek(): T{
+
+    peek(): T {
         return this.data[0];
     }
-    
+
     static from<T>(l: T[]): MinHeap<T> {
         const h = new MinHeap<T>();
-        
+
         h.length = l.length;
-        
+
         for (let i = 0; i < l.length; i++) {
             h.data[i] = l[i];
         }
-        
+
         for (let i = h.length; i >= 0; i--) {
             h.bubbleDown(i);
         }

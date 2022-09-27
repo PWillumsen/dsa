@@ -8,3 +8,18 @@ type BinaryTree<T> = {
     left: BinaryTree<T> | null;
     right: BinaryTree<T> | null;
 };
+
+type CompleteGraphEdge = {
+    from: number;
+    to: number;
+    weight: number;
+};
+
+type GraphEdge = {
+    to: number;
+    weight: number;
+};
+
+type WeightedAdjacencyList = GraphEdge[][];
+
+type WeightedAdjacencyMatrix = number[][];
