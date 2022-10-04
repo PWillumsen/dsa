@@ -47,3 +47,4 @@ npm test
 - [Binary search tree](src/code/binarySearchTree.ts)
 - [BFS adjacency matrix](src/code/bfsGraphMatrix.ts)
 - [DFS adjacency list](src/code/dfsGraphList.ts)
+- [Dijkstra on adjacency list](src/code/dijkstraList.ts)
